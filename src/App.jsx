@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Form from "./components/Form/Form.jsx";
 import List from "./components/List/List.jsx";
+import Header from "./components/Header/Header.jsx";
 import useLocalStorageState from "use-local-storage-state";
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
 
   return (
     <>
+      <Header/>
       <div className="app">
         <h1 className="app-heading">
           <span style={{fontSize:"1.5rem"}}>{weather.condition}&nbsp;</span>
