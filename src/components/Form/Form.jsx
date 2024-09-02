@@ -1,5 +1,6 @@
 import { uid } from "uid";
 import PropTypes from "prop-types";
+import "./Form.css";
 
 const Form = ({ onAddActivity }) => {
   function handleSubmit(event) {
@@ -26,13 +27,12 @@ const Form = ({ onAddActivity }) => {
       onSubmit={handleSubmit}
     >
       <h2 className="form__header" id="formHeading">
-        {" "}
         Add new Activity:
       </h2>
 
       <div className="form__row">
         <label htmlFor="name" className="form__label">
-          Name:
+          Activity Name:&nbsp;
         </label>
         <input
           type="text"
@@ -44,7 +44,7 @@ const Form = ({ onAddActivity }) => {
 
       <div className="form__row">
         <label htmlFor="isGoodWeather" className="form__label">
-          Good-weather activity:{" "}
+          Good-weather activity:&emsp;
         </label>
         <input
           type="checkbox"
@@ -53,7 +53,7 @@ const Form = ({ onAddActivity }) => {
           className="form__input-checkbox"
         ></input>
       </div>
-
+      <br/>
       <div className="form__row-button">
         <button type="submit">Submit</button>
       </div>

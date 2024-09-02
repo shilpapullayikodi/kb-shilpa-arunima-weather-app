@@ -1,7 +1,8 @@
 import ListItem from "../ListItem/ListItem";
 import PropTypes from "prop-types";
+import "../ListItem/ListItem.css"
 
-const ListEntries = ({ activities, onDeleteActivity }) => {
+const List = ({ activities, onDeleteActivity }) => {
   return (
     <ul className="list__item-ul">
       {activities.map(({ id, name }) => {
@@ -19,9 +20,9 @@ const ListEntries = ({ activities, onDeleteActivity }) => {
   );
 };
 
-ListEntries.propTypes = {
+List.propTypes = {
   activities: PropTypes.array,
   onDeleteActivity: PropTypes.func
 }
 
-export default ListEntries;
+export default List;

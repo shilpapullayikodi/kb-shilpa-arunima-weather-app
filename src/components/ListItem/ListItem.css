@@ -1,0 +1,21 @@
+ul {
+    display: flex;  
+    justify-content: center; 
+    width: 100%; 
+    padding: 0;
+    margin: 20px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.delete-button {
+    gap: 10px;
+    margin: 0;
+    padding: 7px;
+    margin-left: 5px;
+    background-color: #2F3645;
+}

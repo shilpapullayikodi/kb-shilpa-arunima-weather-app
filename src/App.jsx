@@ -56,7 +56,7 @@ function App() {
     <>
       <div className="app">
         <h1 className="app-heading">
-          <span style={{fontSize:"1.5rem"}}>{weather.condition}</span>
+          <span style={{fontSize:"1.5rem"}}>{weather.condition}&nbsp;</span>
           <span>{weather.temperature}&nbsp;&#8451;</span>
         </h1>
 
