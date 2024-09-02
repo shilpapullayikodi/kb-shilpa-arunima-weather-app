@@ -1,16 +1,18 @@
+import { uid } from "uid";
+import PropTypes from "prop-types";
+
 const Form = ({ onAddActivity }) => {
   function handleSubmit(event) {
     event.preventDefault();
 
     const form = event.target;
-    const formElement = form.Elements;
+    const formElement = form.elements;
 
     const data = {
       name: formElement.name.value,
-      ifGoodWeather: formElement.isGoodWeather.checked,
-      //id: uid();
+      isGoodWeather: formElement.isGoodWeather.checked,
+      id: uid()
     };
-
     onAddActivity(data);
 
     form.reset();
@@ -53,10 +55,14 @@ const Form = ({ onAddActivity }) => {
       </div>
 
       <div className="form__row-button">
-        <button type-="submit">Submit</button>
+        <button type="submit">Submit</button>
       </div>
     </form>
   );
 };
+
+Form.propTypes = {
+  onAddActivity: PropTypes.func.isRequired,
+}
 
 export default Form;
