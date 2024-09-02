@@ -48,9 +48,8 @@ function App() {
       </div>
     );
   }
-  const isGoodWeather = true;
   const filteredActivites = activities.filter(
-    activity => activity.isGoodWeather === isGoodWeather
+    activity => activity.isGoodWeather === weather.isGoodWeather
   );
 
   return (
