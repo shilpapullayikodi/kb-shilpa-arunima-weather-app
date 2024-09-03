@@ -5,11 +5,15 @@ import List from "./components/List/List.jsx";
 import Header from "./components/Header/Header.jsx";
 import useLocalStorageState from "use-local-storage-state";
 import Location from "./components/Location/Location.jsx";
+import TaskForm from "./components/Tasks/TaskForm/TaskForm.jsx";
+import TaskList from "./components/Tasks/Tasks.jsx";
 
 function App() {
   const [activities, setActivities] = useLocalStorageState("activities", {
     defaultValue: [],
   });
+
+  const [tasks, setTasks] = useState([]);
 
   const [location, setLocation] = useLocalStorageState("location", {
     defaultValue: "europe",
@@ -19,7 +23,7 @@ function App() {
 
   function handleAddNewActivity(newActivity) {
     let trimmedName = newActivity.name.trim();
-    trimmedName = trimmedName.replace(/[^a-zA-Z0-9]/g, "");
+    trimmedName = trimmedName.replace(/[^a-zA-Z0-9\s]/g, "");
 
     if(!trimmedName) {
       alert("Please provide a valid activity name without special characters!");
@@ -38,6 +42,10 @@ function App() {
   function handleDeleteActivity (id) {
     setActivities((prevActivity) => prevActivity.filter(activity => activity.id !== id));
   }
+
+  const handleAddTask = (task) => {
+    setTasks([...tasks, {...task, id:Date.now()}]);
+  };
 
   useEffect(() => {
     async function fetchWeatherData() {
@@ -93,6 +101,8 @@ function App() {
           activities={filteredActivites}
           onDeleteActivity={handleDeleteActivity} />
         <Form onAddActivity={handleAddNewActivity} />
+        <TaskForm onAddTask={handleAddTask}/>
+        <TaskList tasks={tasks}/>
       </div>
     </>
   );
