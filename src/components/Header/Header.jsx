@@ -6,8 +6,8 @@ import { faCloudSun } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
     return (
         <header className="App-header">
-          <h1>Weather &nbsp; <FontAwesomeIcon icon={faCloudSun} beatFade />
-          &nbsp; & Activities 🤸🏼 App</h1>
+          <h1>Weather &nbsp; <FontAwesomeIcon icon={faCloudSun} beatFade /> </h1>
+          <h1>& Activities 🤸🏼 App</h1>
           <p>Get real-time weather information for your location/location of choice.</p>
         </header>
     );

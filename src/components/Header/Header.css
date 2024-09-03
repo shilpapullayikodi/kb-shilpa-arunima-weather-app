@@ -7,22 +7,64 @@
     padding: 20px;
     background-color: #2E236C; 
     width: 100%;
-    border-radius: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #C8ACD6;
   }
   
   .App-header h1 {
-    font-size: 42px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 0; 
+    text-align: center;
   }
   
   .App-header p {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0;
+    text-align: center;
+    padding: 0 10px;
   }
+
+  @media (max-width: 480px) {
+    .App-header {
+        padding: 5px; 
+        border-radius: 5px; 
+    }
+
+    .App-header h1 {
+        font-size: 1.5rem; 
+    }
+
+    .App-header p {
+        font-size: 0.625rem; 
+    }
+}
 
   @media (max-width: 768px) {
     .App-header {
-      margin: 5px;
-    }
+      padding: 10px; 
+      border-radius: 10px; 
+  }
+
+  .App-header h1 {
+      font-size: 1.75rem; 
+  }
+
+  .App-header p {
+      font-size: 0.75rem; 
+  }
+  }
+
+  @media (max-width: 1024px) {
+    .App-header {
+      padding: 15px;
+  }
+  
+  .App-header h1 {
+      font-size: 2rem;
+  }
+
+  .App-header p {
+      font-size: 0.875rem;
+  }
   }

@@ -1,5 +1,6 @@
 ul {
     display: flex;  
+    flex-wrap: wrap;
     justify-content: space-evenly; 
     padding: 0;
     margin: 20px;
@@ -12,19 +13,18 @@ li {
     justify-content: center;
     list-style: none;
     margin: 0 10px;
-    flex-wrap: wrap;
-    background-color: #433D8B;
+    flex: 1 0 auto;
+    background-color: #4E31AA;
     border-radius: 8px;
-    padding: 5px
+    padding: 5px;
+    min-width: 100px;
 }
 
 .delete-button {
     display: inline;
     justify-content: space-evenly;
-    align-self: center;
-    align-content: center;
-    margin: 0;
+    align-items: center;
+    margin: 0 5px;
     padding: 4px;
-    gap: 2px;
-    background-color: #433D8B;
+    background-color: #4E31AA;
 }

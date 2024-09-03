@@ -57,6 +57,7 @@ const Form = ({ onAddActivity }) => {
       <div className="form__row-button">
         <button type="submit">Submit</button>
       </div>
+      <br />
     </form>
   );
 };
