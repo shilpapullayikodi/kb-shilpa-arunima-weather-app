@@ -7,7 +7,7 @@
   width: 100%;
   margin: 20px 0;
   border-radius: 50px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px #B1AFFF;
   background-color: #433D8B;
 }
 
@@ -38,6 +38,9 @@
     font-size: medium;
     border-radius: 10px;
     transform: scale(1);
+    color:white;
+    width: 100%;
+    max-width: 400px;
 }
 
 .form__input-checkbox {
@@ -45,15 +48,17 @@
     background-color: #2F3645;
 }
 
-.form__row--button {
-  margin: 20px;
+.submit-button {
+  color: #17153B;
+  background-color: #9290C3;
 }
 
-.form__row--button:focus,
-.form__row--button:focus-visible {
+.submit-button:focus,
+.submit-button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* .form__row--button:hover {
-    color: #987D9A;
-  } */
+.submit-button:hover {
+    background-color: #17153B;
+    color: white;
+  } 

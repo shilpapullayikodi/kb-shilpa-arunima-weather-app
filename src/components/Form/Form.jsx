@@ -38,6 +38,7 @@ const Form = ({ onAddActivity }) => {
           type="text"
           id="name"
           className="form__input-text"
+          placeholder="Enter Activity name (max 50 characters).."
           name="name"
         ></input>
       </div>
@@ -55,7 +56,7 @@ const Form = ({ onAddActivity }) => {
       </div>
       <br/>
       <div className="form__row-button">
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-button">Submit</button>
       </div>
       <br />
     </form>

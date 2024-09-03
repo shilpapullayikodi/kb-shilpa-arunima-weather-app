@@ -8,7 +8,7 @@ const Header = () => {
         <header className="App-header">
           <h1>Weather &nbsp; <FontAwesomeIcon icon={faCloudSun} beatFade /> </h1>
           <h1>& Activities 🤸🏼 App</h1>
-          <p>Get real-time weather information for your location/location of choice.</p>
+          <p>Get real-time weather information for your location of choice.</p>
         </header>
     );
 };
