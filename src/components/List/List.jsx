@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "../ListItem/ListItem.css"
 
 const List = ({ activities, onDeleteActivity }) => {
+  
   return (
     <ul className="list__item-ul">
       {activities.map(({ id, name }) => {

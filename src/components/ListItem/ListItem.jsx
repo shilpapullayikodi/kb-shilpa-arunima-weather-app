@@ -5,7 +5,7 @@ const ListItem = ({ children }) => {
   return (<li className="list__item">{children}</li>);
 };
 
-ListItem.PropTypes = {
+ListItem.propTypes = {
   children: PropTypes.node
 };
 

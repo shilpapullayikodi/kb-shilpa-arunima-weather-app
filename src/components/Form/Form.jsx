@@ -41,17 +41,17 @@ const Form = ({ onAddActivity }) => {
           name="name"
         ></input>
       </div>
-
+      <br/>
       <div className="form__row">
-        <label htmlFor="isGoodWeather" className="form__label">
-          Good-weather activity:&emsp;
-        </label>
         <input
           type="checkbox"
           id="isGoodWeather"
           name="isGoodWeather"
           className="form__input-checkbox"
         ></input>
+        <label htmlFor="isGoodWeather" className="form__label">
+          Good-weather activity&emsp;
+        </label>
       </div>
       <br/>
       <div className="form__row-button">
